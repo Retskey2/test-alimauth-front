@@ -1,13 +1,13 @@
-export interface Profile {
+export interface IProfile {
   username: string;
   email: string;
 }
 
-export interface ProfileState {
-  profile: Profile | null;
+export interface IProfileState {
+  profile: IProfile | null;
   isLoading: boolean;
   error: string | null;
 
-  updateProfile: (data: Profile) => Promise<void>;
+  updateProfile: (data: IProfile) => Promise<void>;
   logout: () => void;
 }

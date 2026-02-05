@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
-import type { Profile, ProfileState } from './types';
+import type { IProfile, IProfileState } from './types';
 
 const initialState = {
   profile: null,
@@ -9,13 +9,13 @@ const initialState = {
   error: null,
 };
 
-export const useProfileStore = create<ProfileState>()(
+export const useProfileStore = create<IProfileState>()(
   devtools(
     persist(
       (set) => ({
         ...initialState,
 
-        updateProfile: async (data: Profile) => {
+        updateProfile: async (data: IProfile) => {
           set({ isLoading: true, error: null });
 
           try {

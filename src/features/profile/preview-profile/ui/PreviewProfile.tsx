@@ -1,10 +1,10 @@
-import { type Profile } from '@/entities/profile/model/types';
+import { type IProfile } from '@/entities/profile/model/types';
 import { DisplayField } from '@/shared/ui/DisplayField/DisplayField';
 import clsx from 'clsx';
 
 import styles from './PreviewProfile.module.scss';
 
-type IPreviewProfileForm = Partial<Profile> & { classname?: string };
+type IPreviewProfileForm = Partial<IProfile> & { classname?: string };
 
 export const PreviewProfileForm = ({ email, username, classname }: IPreviewProfileForm) => {
   return (

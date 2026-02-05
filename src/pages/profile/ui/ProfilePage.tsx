@@ -8,16 +8,16 @@ export const ProfilePage = () => {
   const { logout, profile } = useProfileStore();
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Title className={styles.title}>Your Profile</Title>
       <PreviewProfileForm
         classname={styles.previewForm}
         email={profile?.email}
         username={profile?.username}
       />
-      <Button className={styles.button} type="submit" onClick={logout}>
+      <Button className={styles.button} type="button" onClick={logout}>
         Logout
       </Button>
-    </div>
+    </main>
   );
 };

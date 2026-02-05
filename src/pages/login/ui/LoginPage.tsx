@@ -5,9 +5,9 @@ import styles from './LoginPage.module.scss';
 
 export const LoginPage = () => {
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <Title className={styles.title}>Login to Your Account</Title>
       <PostProfileForm />
-    </div>
+    </main>
   );
 };

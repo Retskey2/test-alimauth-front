@@ -24,12 +24,11 @@ export const PostProfileForm = () => {
 
   return (
     <form className={styles.container} onSubmit={handleSubmit(onSubmit)}>
-      {error && <p>{error}</p>}
+      {error && <p role="alert">{error}</p>}
 
-      <div className={styles.inputWrapper}>
+      <fieldset className={styles.inputWrapper} disabled={isLoading}>
         <TextField
           label="Name"
-          disabled={isLoading}
           {...register('username')}
           error={errors.username?.message}
           placeholder="Enter your name"
@@ -37,7 +36,7 @@ export const PostProfileForm = () => {
 
         <TextField
           label="Email"
-          disabled={isLoading}
+          type="email"
           {...register('email')}
           error={errors.email?.message}
           placeholder="Enter your Email"
@@ -46,13 +45,12 @@ export const PostProfileForm = () => {
         <TextField
           type="password"
           label="Password"
-          disabled={isLoading}
           autoComplete="new-password"
           {...register('password')}
           error={errors.password?.message}
           placeholder="Enter your password"
         />
-      </div>
+      </fieldset>
 
       <Button type="submit" disabled={!isValid} className={styles.button} isLoading={isLoading}>
         Login

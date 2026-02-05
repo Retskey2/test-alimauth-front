@@ -1,0 +1,21 @@
+:root {
+  --bg-color: #111111;
+  --text-color: #ffffff;
+
+  --button-primary-color: #60c2ff;
+  --error-color: #ff3b30;
+  --error-color-background: #ff3b300d;
+  --border-color: #fffbfb;
+}
+
+$blob-blur: 200px;
+$blob-opacity: 0.5;
+$blob-size: 821px;
+$blob-blur: 100px;
+$blob-gradient: linear-gradient(135deg, #6c1ace 0%, #79d1ff 100%);
+
+$breakpoint-mobile: 375px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-desktop: 1280px;
+$breakpoint-large: 1440px;

@@ -1,0 +1,9 @@
+@use '@/shared/styles/variables' as *;
+
+body {
+  font-family: 'Akt';
+  font-weight: normal;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  -webkit-font-smoothing: antialiased;
+}

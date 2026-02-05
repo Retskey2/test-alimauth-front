@@ -1,0 +1,36 @@
+.background {
+  inset: 0;
+  z-index: -1;
+  position: fixed;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: $blob-opacity;
+  filter: blur($blob-blur);
+  background: $blob-gradient;
+
+  &:first-child {
+    width: 535px;
+    height: 535px;
+  }
+
+  &:nth-child(2) {
+    width: 821px;
+    height: 821px;
+  }
+}
+
+.topRight {
+  top: -136px;
+  right: -200px;
+}
+
+.bottomLeft {
+  bottom: -200px;
+  left: -200px;
+}

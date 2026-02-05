@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  .title {
+    padding: 0 16px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .previewForm {
+    max-width: 364px;
+    margin: 227px auto 214px auto;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 318px;
+
+    margin: inherit;
+  }
+}

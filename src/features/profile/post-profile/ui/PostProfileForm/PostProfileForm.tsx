@@ -1,8 +1,5 @@
-import { useProfileStore } from '@/entities';
-import {
-  type PostProfileValues,
-  postProfileSchema,
-} from '@/features/profile/post-profile/model/schema';
+import { useProfileStore } from '@/entities/profile';
+import { type PostProfileValues, postProfileSchema } from '@/features/profile/post-profile';
 import { Button, TextField } from '@/shared/ui';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
@@ -18,7 +15,7 @@ export const PostProfileForm = () => {
     formState: { errors, isValid },
   } = useForm<PostProfileValues>({
     resolver: zodResolver(postProfileSchema),
-    mode: "onChange"
+    mode: 'onChange',
   });
 
   const onSubmit = async (data: PostProfileValues) => {
@@ -50,7 +47,7 @@ export const PostProfileForm = () => {
           type="password"
           label="Password"
           disabled={isLoading}
-          autoComplete="new-password" 
+          autoComplete="new-password"
           {...register('password')}
           error={errors.password?.message}
           placeholder="Enter your password"

@@ -1,5 +1,5 @@
-import { PostProfileForm } from '@/features/profile/post-profile/ui/PostProfileForm/PostProfileForm';
-import { Title } from '@/shared/ui/Title/Title';
+import { PostProfileForm } from '@/features/profile/post-profile';
+import { Title } from '@/shared/ui';
 
 import styles from './LoginPage.module.scss';
 

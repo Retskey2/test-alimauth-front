@@ -1,7 +1,6 @@
-import { useProfileStore } from '@/entities';
-import { PreviewProfileForm } from '@/features/profile/preview-profile/ui/PreviewProfile';
-import { Button } from '@/shared/ui';
-import { Title } from '@/shared/ui/Title/Title';
+import { useProfileStore } from '@/entities/profile';
+import { PreviewProfileForm } from '@/features/profile/preview-profile';
+import { Button, Title } from '@/shared/ui';
 
 import styles from './ProfilePage.module.scss';
 

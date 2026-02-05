@@ -1,5 +1,5 @@
-import { type IProfile } from '@/entities/profile/model/types';
-import { DisplayField } from '@/shared/ui/DisplayField/DisplayField';
+import { type IProfile } from '@/entities/profile';
+import { DisplayField } from '@/shared/ui';
 import clsx from 'clsx';
 
 import styles from './PreviewProfile.module.scss';

@@ -1,4 +1,4 @@
-import { Title } from '@/shared/ui/Title/Title';
+import { Title } from '@/shared/ui';
 
 import styles from './NotFoundPage.module.scss';
 

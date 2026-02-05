@@ -1,6 +1,6 @@
-import { LayoutBackround } from '@/layouts/LayoutBackround/LayoutBackround';
+import { LayoutBackround } from '@/layouts';
 import { LoginPage, NotFoundPage, ProfilePage } from '@/pages';
-import { routes } from '@/shared/config/routes';
+import { routes } from '@/shared/config';
 import { createBrowserRouter } from 'react-router-dom';
 
 import { GuestRoute } from './guest-route';

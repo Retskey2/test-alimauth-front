@@ -1,4 +1,4 @@
-import { useProfileStore } from '@/entities/profile/model/store';
+import { useProfileStore } from '@/entities/profile';
 import { Navigate, Outlet } from 'react-router-dom';
 
 export const ProtectedRoute = () => {

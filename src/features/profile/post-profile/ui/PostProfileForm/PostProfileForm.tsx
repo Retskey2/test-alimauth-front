@@ -15,9 +15,10 @@ export const PostProfileForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isValid },
   } = useForm<PostProfileValues>({
     resolver: zodResolver(postProfileSchema),
+    mode: "onChange"
   });
 
   const onSubmit = async (data: PostProfileValues) => {
@@ -49,13 +50,14 @@ export const PostProfileForm = () => {
           type="password"
           label="Password"
           disabled={isLoading}
+          autoComplete="new-password" 
           {...register('password')}
           error={errors.password?.message}
           placeholder="Enter your password"
         />
       </div>
 
-      <Button type="submit" className={styles.button} isLoading={isLoading}>
+      <Button type="submit" disabled={!isValid} className={styles.button} isLoading={isLoading}>
         Login
       </Button>
     </form>
